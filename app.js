@@ -25,6 +25,9 @@ const app = Vue.createApp({
         },
         useableSpecial() {
             return this.rounds % 3 !== 0;
+        },
+        healable() {
+            return this.playerHealth === 100;
         }
     },
     watch: {
